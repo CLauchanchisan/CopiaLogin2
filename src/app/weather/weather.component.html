@@ -1,0 +1,8 @@
+<div *ngIf="weatherData">
+  <h2>Weather Data for {{ weatherData.icao }}</h2>
+  <p>Temperature: {{ weatherData.temperature }} °C</p>
+</div>
+
+<div *ngIf="!weatherData">
+  <p>Cargando datos del clima...</p>
+</div>
